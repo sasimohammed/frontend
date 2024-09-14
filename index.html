@@ -1,0 +1,315 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>challenge1</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: "Playpen Sans", cursive;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .card {
+      border-radius: 10px;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .card-body {
+      background-color: #F8CA72;
+      border-radius: 10px;
+      box-shadow: 0 0 5px black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .card-body p {
+      font-size: 30px;
+      color: black;
+      font-weight: 650;
+      margin-top: 20px;
+    }
+
+    .card-body img {
+      width: 90%;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    #card2 .card-body {
+      background-color: #FAEEE2;
+      box-shadow: 0 0 5px black;
+    }
+
+    #card2 .card-body p {
+      color: black;
+      font-size: 30px;
+    }
+
+    #card3 {
+      border-radius: 10px;
+      margin: 10px;
+      height: 60%;
+    }
+
+    #card3 .card-body {
+      background-color: #7653D6;
+      box-shadow: 0 0 5px black;
+    }
+
+    #card3 .card-body p {
+      font-size: 45px;
+      color: white;
+    }
+
+    #card3 .card-body p span {
+      font-size: 55px;
+      color: #FDC777;
+    }
+
+    #card3 .card-body img {
+      width: 200px;
+      margin-top: 20px;
+    }
+
+    #card3 .card-body h3 {
+      font-size: 15px;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .sloped-text {
+      font-style: italic;
+      font-size: 25px;
+      color: #7653D6;
+      font-weight: 650;
+    }
+    #card4 .card-body {
+      background-color: white;
+display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #card4{
+      height:80%;
+    }
+    #card4 .card-body img {
+    width:80%;
+    }
+    #card4 .card-body p {
+      font-size: 25px;
+      margin-top: -10px;
+    }
+    #card5 .card-body {
+      background-color: white;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #card5{
+      height:80%;
+      overflow: hidden;
+    }
+    #card5 .card-body{
+      background-color:#FDC777 ;
+    }
+    #card5 .card-body p {
+      font-size: 25px;
+    }
+    #card5 .card-body img{
+   width:60%;
+    }
+    #card6 .card-body {
+      background-color: white;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #card6{
+      height:70%;
+    }
+
+    #card6 .card-body p {
+      font-size: 60px;
+      padding-top: 10px;
+    }
+    #card6 .card-body img{
+width:80%;
+      margin-top: -10px;
+      height: auto;
+      padding-bottom:100px;
+    }
+
+#card7 .card-body{
+  width:800px;
+  height:300px;
+  display:flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  background-color:#7653D6 ;
+
+
+}
+    #card7 p{
+      font-size: 45px;
+      color:white;
+    }
+    #card7 img{
+      width:100%;
+      height:auto;
+
+    }
+
+    @media (max-width: 768px) {
+      /* Target all card bodies inside all cards */
+      .card-body {
+        width: 100%; /* Make the card full-width */
+        height: auto; /* Allow height to adjust dynamically */
+        flex-direction: column; /* Stack content vertically */
+      }
+
+      /* Adjust the text for all card texts on smaller screens */
+      .card-body p {
+        font-size: 30px; /* Reduce font size */
+        text-align: center; /* Center the text */
+      }
+      /* Adjust the images for all cards on smaller screens */
+      .card-body img {
+        max-width: 80%; /* Reduce image size */
+        margin: 0 auto; /* Center the image */
+      }
+      #card7 .card-body {
+        width: 100%; /* On smaller screens, make the card full-width */
+        height: auto; /* Allow height to adjust dynamically */
+        flex-direction: column; /* Stack content vertically */
+      }
+      #card7 p {
+        font-size: 30px; /* Reduce font size on smaller screens */
+        text-align: center; /* Center the text */
+      }
+      #card7 img {
+        max-width: 80%; /* Reduce image size on smaller screens */
+        margin: 0 auto; /* Center the image */
+      }
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+<div class="container text-center">
+  <div class="row">
+    <!-- First and Second Cards (Left Side on Larger Screens, Stacked on Smaller Screens) -->
+    <div class="col-12 col-md-4 d-flex flex-column">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">Write Your Content Using AI</p>
+          <div class="img">
+            <img src="img/1.webp" class="card-img-top" alt="...">
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="card2">
+        <div class="card-body">
+          <p class="card-text" id="card-text2">Create and schedule content <span class="sloped-text">quicker</span></p>
+          <div class="img" id="img2">
+            <img src="img/2.webp" class="card-img-top" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third Card (Right Side on Larger Screens, Centered on Smaller Screens) -->
+    <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+      <div class="card" id="card3">
+        <div class="card-body">
+          <p class="card-text" id="card-text3">Social Media <span>10x</span> Faster with Ai</p>
+          <div class="img" id="img3">
+            <img src="img/3.webp" class="card-img-top" alt="...">
+            <h3><span>Over 4,000 5-star reviews</span></h3>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Fourth and Fifth Cards (Side by Side on Larger Screens, Stacked on Smaller Screens) -->
+      <div class="row w-100">
+        <div class="col-12 col-md-6">
+          <div class="card" id="card4">
+            <div class="card-body">
+              <div class="img" id="img4">
+                <img src="img/4.webp" class="card-img-top" alt="...">
+              </div>
+              <p class="card-text" id="card-text4">Manage multiple accounts and platforms</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card" id="card5">
+            <div class="card-body">
+              <p class="card-text" id="card-text5">maintain consistent posting schedule</p>
+              <div class="img" id="img5">
+                <img src="img/5.webp" class="card-img-top" alt="...">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row w-100">
+        <div class="col-12 col-md-6">
+          <div class="card" id="card6">
+            <div class="card-body">
+              <p class="card-text"> > 56%</p>
+              <div class="img" id="img6">
+                <img src="img/6.webp" class="card-img-top" alt="...">
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="card" id="card7">
+            <div class="card-body">
+              <div class="img" id="img7">
+                <img src="img/7.webp" class="card-img-top" alt="...">
+              </div>
+              <p class="card-text" >Grow followers with non-stop content
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
